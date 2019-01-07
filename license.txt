@@ -1,0 +1,5 @@
+/* Copyright (C) Thomas Salemy - All Rights Reserved
+ * Unauthorized copying of any files in this repository, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Thomas Salemy, January 6th 2018
+ */

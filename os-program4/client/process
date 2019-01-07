@@ -1,0 +1,316 @@
+USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root          1  0.0  0.0 225556  2752 ?        Ss   Dec01   0:21 /sbin/init auto noprompt
+root          2  0.0  0.0      0     0 ?        S    Dec01   0:00 [kthreadd]
+root          4  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kworker/0:0H]
+root          6  0.0  0.0      0     0 ?        I<   Dec01   0:00 [mm_percpu_wq]
+root          7  0.0  0.0      0     0 ?        S    Dec01   0:02 [ksoftirqd/0]
+root          8  0.0  0.0      0     0 ?        I    Dec01   0:34 [rcu_sched]
+root          9  0.0  0.0      0     0 ?        I    Dec01   0:00 [rcu_bh]
+root         10  0.0  0.0      0     0 ?        S    Dec01   0:00 [migration/0]
+root         11  0.0  0.0      0     0 ?        S    Dec01   0:00 [watchdog/0]
+root         12  0.0  0.0      0     0 ?        S    Dec01   0:00 [cpuhp/0]
+root         13  0.0  0.0      0     0 ?        S    Dec01   0:00 [cpuhp/1]
+root         14  0.0  0.0      0     0 ?        S    Dec01   0:00 [watchdog/1]
+root         15  0.0  0.0      0     0 ?        S    Dec01   0:00 [migration/1]
+root         16  0.0  0.0      0     0 ?        S    Dec01   0:02 [ksoftirqd/1]
+root         18  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kworker/1:0H]
+root         19  0.0  0.0      0     0 ?        S    Dec01   0:00 [cpuhp/2]
+root         20  0.0  0.0      0     0 ?        S    Dec01   0:00 [watchdog/2]
+root         21  0.0  0.0      0     0 ?        S    Dec01   0:00 [migration/2]
+root         22  0.0  0.0      0     0 ?        S    Dec01   0:03 [ksoftirqd/2]
+root         24  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kworker/2:0H]
+root         25  0.0  0.0      0     0 ?        S    Dec01   0:00 [cpuhp/3]
+root         26  0.0  0.0      0     0 ?        S    Dec01   0:00 [watchdog/3]
+root         27  0.0  0.0      0     0 ?        S    Dec01   0:00 [migration/3]
+root         28  0.0  0.0      0     0 ?        S    Dec01   0:03 [ksoftirqd/3]
+root         30  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kworker/3:0H]
+root         31  0.0  0.0      0     0 ?        S    Dec01   0:00 [kdevtmpfs]
+root         32  0.0  0.0      0     0 ?        I<   Dec01   0:00 [netns]
+root         33  0.0  0.0      0     0 ?        S    Dec01   0:00 [rcu_tasks_kthre]
+root         34  0.0  0.0      0     0 ?        S    Dec01   0:00 [kauditd]
+root         36  0.0  0.0      0     0 ?        S    Dec01   0:00 [khungtaskd]
+root         37  0.0  0.0      0     0 ?        S    Dec01   0:00 [oom_reaper]
+root         38  0.0  0.0      0     0 ?        I<   Dec01   0:00 [writeback]
+root         39  0.0  0.0      0     0 ?        S    Dec01   0:43 [kcompactd0]
+root         40  0.0  0.0      0     0 ?        SN   Dec01   0:00 [ksmd]
+root         41  0.0  0.0      0     0 ?        SN   Dec01   0:00 [khugepaged]
+root         42  0.0  0.0      0     0 ?        I<   Dec01   0:00 [crypto]
+root         43  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kintegrityd]
+root         44  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kblockd]
+root         46  0.0  0.0      0     0 ?        I<   Dec01   0:00 [ata_sff]
+root         47  0.0  0.0      0     0 ?        I<   Dec01   0:00 [md]
+root         48  0.0  0.0      0     0 ?        I<   Dec01   0:00 [edac-poller]
+root         49  0.0  0.0      0     0 ?        I<   Dec01   0:00 [devfreq_wq]
+root         50  0.0  0.0      0     0 ?        I<   Dec01   0:00 [watchdogd]
+root         55  0.0  0.0      0     0 ?        S    Dec01   0:24 [kswapd0]
+root         56  0.0  0.0      0     0 ?        S    Dec01   0:00 [ecryptfs-kthrea]
+root         98  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kthrotld]
+root         99  0.0  0.0      0     0 ?        I<   Dec01   0:00 [acpi_thermal_pm]
+root        100  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_0]
+root        101  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_0]
+root        102  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_1]
+root        103  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_1]
+root        109  0.0  0.0      0     0 ?        I<   Dec01   0:00 [ipv6_addrconf]
+root        118  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kstrp]
+root        135  0.0  0.0      0     0 ?        I<   Dec01   0:00 [charger_manager]
+root        193  0.0  0.0      0     0 ?        I<   Dec01   0:00 [mpt_poll_0]
+root        194  0.0  0.0      0     0 ?        I<   Dec01   0:00 [mpt/0]
+root        195  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_2]
+root        196  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_2]
+root        197  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_3]
+root        198  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_3]
+root        199  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_4]
+root        200  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_4]
+root        201  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_5]
+root        202  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_5]
+root        203  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_6]
+root        204  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_6]
+root        205  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_7]
+root        206  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_7]
+root        207  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_8]
+root        208  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_8]
+root        209  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_9]
+root        210  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_9]
+root        211  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_10]
+root        212  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_10]
+root        213  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_11]
+root        214  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_11]
+root        215  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_12]
+root        216  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_12]
+root        217  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_13]
+root        218  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_13]
+root        219  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_14]
+root        220  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_14]
+root        221  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_15]
+root        222  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_15]
+root        223  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_16]
+root        224  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_16]
+root        225  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_17]
+root        226  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_17]
+root        227  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_18]
+root        228  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_18]
+root        229  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_19]
+root        230  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_19]
+root        231  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_20]
+root        232  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_20]
+root        233  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_21]
+root        234  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_21]
+root        235  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_22]
+root        236  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_22]
+root        237  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_23]
+root        238  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_23]
+root        239  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_24]
+root        240  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_24]
+root        241  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_25]
+root        242  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_25]
+root        243  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_26]
+root        244  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_26]
+root        245  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_27]
+root        246  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_27]
+root        247  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_28]
+root        248  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_28]
+root        249  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_29]
+root        250  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_29]
+root        251  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_30]
+root        252  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_30]
+root        253  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_31]
+root        254  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_31]
+root        283  0.0  0.0      0     0 ?        S    Dec01   0:00 [scsi_eh_32]
+root        284  0.0  0.0      0     0 ?        I<   Dec01   0:00 [scsi_tmf_32]
+root        285  0.0  0.0      0     0 ?        I<   Dec01   0:00 [ttm_swap]
+root        286  0.0  0.0      0     0 ?        S    Dec01   0:21 [irq/16-vmwgfx]
+root        288  0.0  0.0      0     0 ?        I<   Dec01   0:02 [kworker/0:1H]
+root        290  0.0  0.0      0     0 ?        I<   Dec01   0:01 [kworker/3:1H]
+root        309  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kworker/1:1H]
+root        313  0.0  0.0      0     0 ?        I<   Dec01   0:01 [kworker/2:1H]
+root        321  0.0  0.0      0     0 ?        S    Dec01   0:43 [jbd2/sda1-8]
+root        322  0.0  0.0      0     0 ?        I<   Dec01   0:00 [ext4-rsv-conver]
+root        362  0.0  0.9 320468 39592 ?        S<s  Dec01   0:52 /lib/systemd/systemd-journald
+root        370  0.0  0.0  47796  1068 ?        Ss   Dec01   0:01 /lib/systemd/systemd-udevd
+root        374  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop0]
+root        382  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop1]
+root        383  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop2]
+root        388  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop3]
+root        391  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop4]
+root        399  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop5]
+root        400  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop6]
+root        406  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop7]
+root        412  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop8]
+root        413  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop9]
+root        415  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop10]
+root        416  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop11]
+root        419  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop12]
+root        423  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop13]
+root        424  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop14]
+root        426  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop15]
+root        428  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop16]
+root        429  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop17]
+root        430  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop18]
+root        431  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop19]
+root        432  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop20]
+root        433  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop21]
+root        434  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop22]
+root        435  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop23]
+root        437  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop24]
+root        441  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop25]
+root        443  0.0  0.0      0     0 ?        S<   Dec01   0:00 [loop26]
+root        447  0.0  0.0 158788     0 ?        Ssl  Dec01   0:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root        450  0.2  0.0 206164  3456 ?        Ssl  Dec01   5:14 /usr/bin/vmtoolsd
+systemd+    527  0.0  0.0 146100    80 ?        Ssl  Dec01   0:08 /lib/systemd/systemd-timesyncd
+systemd+    529  0.0  0.0  70880  1236 ?        Ss   Dec01   0:07 /lib/systemd/systemd-resolved
+root        643  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kworker/u257:1]
+root        644  0.0  0.0      0     0 ?        I<   Dec01   0:00 [kworker/u257:2]
+root        672  0.0  0.0 427260     0 ?        Ssl  Dec01   0:00 /usr/sbin/ModemManager
+message+    676  0.0  0.0  51760  2892 ?        Ss   Dec01   0:07 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+avahi       705  0.0  0.0  47256   964 ?        Ss   Dec01   0:07 avahi-daemon: running [ubuntu.local]
+syslog      706  0.0  0.0 263036  1124 ?        Ssl  Dec01   0:14 /usr/sbin/rsyslogd -n
+root        707  0.0  0.0  44752    64 ?        Ss   Dec01   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root        716  0.0  0.0  70728   936 ?        Ss   Dec01   0:02 /lib/systemd/systemd-logind
+root        720  0.0  0.1 567912  4552 ?        Ssl  Dec01   0:14 /usr/sbin/NetworkManager --no-daemon
+root        737  0.0  0.0 177624     8 ?        Ssl  Dec01   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+avahi       738  0.0  0.0  47076    32 ?        S    Dec01   0:00 avahi-daemon: chroot helper
+root        739  0.0  0.0 110508   144 ?        Ssl  Dec01   0:14 /usr/sbin/irqbalance --foreground
+root        740  0.0  0.0   4552    32 ?        Ss   Dec01   0:05 /usr/sbin/acpid
+root        741  0.0  0.0  87740     4 ?        Ss   Dec01   0:00 /usr/bin/VGAuthService
+root        746  0.0  0.0 503752   524 ?        Ssl  Dec01   0:01 /usr/lib/udisks2/udisksd
+root        775  0.0  0.0  38428   104 ?        Ss   Dec01   0:00 /usr/sbin/cron -f
+root        778  0.0  0.0 294736   288 ?        Ssl  Dec01   0:05 /usr/lib/accountsservice/accounts-daemon
+root        786  0.0  0.2 782132  9552 ?        Ssl  Dec01   0:21 /usr/lib/snapd/snapd
+root        804  0.0  0.0 303468  3360 ?        Ssl  Dec01   0:01 /usr/lib/policykit-1/polkitd --no-debug
+root        805  0.0  0.0  36476     0 ?        Ss   Dec01   0:00 /usr/lib/bluetooth/bluetoothd
+colord      825  0.0  0.0 324864   668 ?        Ssl  Dec01   0:00 /usr/lib/colord/colord
+root        838  0.0  0.0 308180   676 ?        Ssl  Dec01   0:00 /usr/sbin/gdm3
+root        861  0.0  0.0 261552   544 ?        Sl   Dec01   0:00 gdm-session-worker [pam/gdm-launch-environment]
+root       1009  0.0  0.0  46772   304 ?        Ss   Dec01   0:07 tpvmlpd2
+gdm        1016  0.0  0.0  77032   448 ?        Ss   Dec01   0:00 /lib/systemd/systemd --user
+gdm        1020  0.0  0.0 114168    44 ?        S    Dec01   0:00 (sd-pam)
+gdm        1059  0.0  0.0 197796     8 tty1     Ssl+ Dec01   0:00 /usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart
+gdm        1064  0.0  0.0  50236   296 ?        Ss   Dec01   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gdm        1078  0.0  0.0 558944   712 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+gdm        1100  0.0  0.8 3452956 33088 tty1    Sl+  Dec01   1:18 /usr/bin/gnome-shell
+root       1190  0.0  0.0 233072    76 ?        Ssl  Dec01   0:00 /usr/bin/vmhgfs-fuse -o subtype=vmhgfs-fuse,allow_other /mnt/hgfs
+root       1214  0.0  0.0 322320   528 ?        Ssl  Dec01   0:00 /usr/lib/upower/upowerd
+whoopsie   1215  0.0  0.0 538040  1236 ?        Ssl  Dec01   0:01 /usr/bin/whoopsie -f
+kernoops   1223  0.0  0.0  56936  1020 ?        Ss   Dec01   0:03 /usr/sbin/kerneloops --test
+kernoops   1228  0.0  0.0  56936   100 ?        Ss   Dec01   0:03 /usr/sbin/kerneloops
+root       1264  0.0  0.1 349188  6384 ?        Sl   Dec01   0:26 /opt/cisco/anyconnect/bin/vpnagentd
+gdm        1312  0.0  0.0 538060  1776 tty1     Sl+  Dec01   0:01 /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6
+gdm        1319  0.0  0.0 349340    12 ?        Ssl  Dec01   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+gdm        1324  0.0  0.0  49928     0 ?        S    Dec01   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+gdm        1326  0.0  0.0 220760     0 ?        Sl   Dec01   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+gdm        1329  0.0  0.0 1153304  204 ?        Ssl  Dec01   0:00 /usr/bin/pulseaudio --daemonize=no
+rtkit      1332  0.0  0.0 183504    24 ?        SNsl Dec01   0:07 /usr/lib/rtkit/rtkit-daemon
+gdm        1385  0.0  0.0 361364     8 tty1     Sl   Dec01   0:00 ibus-daemon --xim --panel disable
+gdm        1388  0.0  0.0 280744     0 tty1     Sl   Dec01   0:00 /usr/lib/ibus/ibus-dconf
+gdm        1391  0.0  0.0 488056    12 tty1     Sl   Dec01   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm        1394  0.0  0.0 278556     0 ?        Sl   Dec01   0:00 /usr/lib/ibus/ibus-portal
+root       1402  0.0  0.0 296788   120 ?        Ssl  Dec01   0:00 /usr/lib/x86_64-linux-gnu/boltd
+root       1403  0.0  0.0 449024  3048 ?        Ssl  Dec01   0:46 /usr/lib/packagekit/packagekitd
+gdm        1404  0.0  0.0 638608   100 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm        1413  0.0  0.0 278156     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm        1419  0.0  0.0 487672    12 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm        1421  0.0  0.1 1073216 6448 tty1     Sl+  Dec01   0:41 /usr/lib/gnome-settings-daemon/gsd-color
+gdm        1423  0.0  0.0 393704     8 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm        1424  0.0  0.0 283740     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm        1425  0.0  0.0 642080   332 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm        1426  0.0  0.0 1289272 2116 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm        1428  0.0  0.0 201996     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm        1433  0.0  0.0 661364   724 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm        1436  0.0  0.0 267004     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm        1437  0.0  0.0 202016     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm        1438  0.0  0.0 275732     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm        1442  0.0  0.0 305104     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm        1447  0.0  0.0 377932     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm        1449  0.0  0.0 332860     0 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm        1452  0.0  0.0 572660   296 tty1     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm        1463  0.0  0.0 204888     0 tty1     Sl   Dec01   0:00 /usr/lib/ibus/ibus-engine-simple
+root       1560  0.0  0.0 415336  1040 ?        Sl   Dec01   0:00 gdm-session-worker [pam/gdm-password]
+tsalemy    1564  0.0  0.1  77128  4404 ?        Ss   Dec01   0:01 /lib/systemd/systemd --user
+tsalemy    1565  0.0  0.0 261632   272 ?        S    Dec01   0:00 (sd-pam)
+tsalemy    1578  0.0  0.0 288900  1324 ?        SLl  Dec01   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+tsalemy    1583  0.0  0.0 212128   276 tty2     Ssl+ Dec01   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu-communitheme /snap/communitheme/current/session
+tsalemy    1585  0.9 10.4 2933932 420892 tty2   Sl+  Dec01  24:10 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+tsalemy    1593  0.0  0.0  53632  4008 ?        Ss   Dec01   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+tsalemy    1596  0.0  0.0   4628     0 tty2     S+   Dec01   0:00 /bin/sh /snap/communitheme/current/session
+tsalemy    1691  0.0  0.0  11304    40 ?        Ss   Dec01   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu-communitheme /snap/communitheme/current/session
+tsalemy    1692  0.0  0.0 559200  1124 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+tsalemy    1694  0.0  0.0 349292    64 ?        Ssl  Dec01   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+tsalemy    1699  0.0  0.0  50052  1584 ?        S    Dec01   0:02 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+tsalemy    1701  0.0  0.0 220772   352 ?        Sl   Dec01   0:08 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+tsalemy    1718  0.7  4.4 4363332 177976 tty2   Sl+  Dec01  18:49 /usr/bin/gnome-shell
+tsalemy    1724  0.0  0.0 291968  1156 ?        Ssl  Dec01   0:00 /usr/lib/gvfs/gvfsd
+tsalemy    1729  0.0  0.0 416112     8 ?        Sl   Dec01   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+tsalemy    1740  0.0  0.2 1696584 8748 ?        Sl   Dec01   0:01 /usr/bin/pulseaudio --start --log-target=syslog
+root       1753  0.0  0.0      0     0 ?        S<   Dec01   0:00 [krfcommd]
+tsalemy    1755  0.0  0.6 382768 27312 tty2     Sl   Dec01   0:43 ibus-daemon --xim --panel disable
+tsalemy    1759  0.0  0.0 280744   216 tty2     Sl   Dec01   0:00 /usr/lib/ibus/ibus-dconf
+tsalemy    1761  0.0  0.0 346008  1448 tty2     Sl   Dec01   0:01 /usr/lib/ibus/ibus-x11 --kill-daemon
+tsalemy    1763  0.0  0.0 278684   352 ?        Sl   Dec01   0:00 /usr/lib/ibus/ibus-portal
+tsalemy    1774  0.0  0.0 689892  1036 ?        Sl   Dec01   0:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+tsalemy    1778  0.0  0.0 1372136 1444 ?        Ssl  Dec01   0:00 /usr/lib/evolution/evolution-source-registry
+tsalemy    1787  0.0  0.0 774292   500 ?        Sl   Dec01   0:01 /usr/lib/gnome-online-accounts/goa-daemon
+tsalemy    1795  0.0  0.0 188020   588 ?        Sl   Dec01   0:00 /usr/lib/dconf/dconf-service
+tsalemy    1799  0.0  0.0 306440  1012 ?        Ssl  Dec01   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+tsalemy    1808  0.0  0.0 377088   284 ?        Sl   Dec01   0:00 /usr/lib/gnome-online-accounts/goa-identity-service
+tsalemy    1814  0.0  0.0 275868   460 ?        Ssl  Dec01   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+tsalemy    1818  0.0  0.0 378812   472 ?        Ssl  Dec01   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+tsalemy    1823  0.0  0.0 274044   372 ?        Ssl  Dec01   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+tsalemy    1827  0.0  0.0 288788   452 ?        Ssl  Dec01   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+tsalemy    1835  0.0  0.1 519248  4256 tty2     Sl+  Dec01   0:02 /usr/lib/gnome-settings-daemon/gsd-power
+tsalemy    1837  0.0  0.0 349344   484 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+tsalemy    1838  0.0  0.0 423344   380 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+tsalemy    1840  0.0  0.0 275732   144 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+tsalemy    1844  0.0  0.0 452836  1052 tty2     Sl+  Dec01   0:03 /usr/lib/gnome-settings-daemon/gsd-sharing
+tsalemy    1847  0.0  0.0 377932   176 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+tsalemy    1851  0.0  0.0 496576  2156 tty2     Sl+  Dec01   0:02 /usr/lib/gnome-settings-daemon/gsd-xsettings
+tsalemy    1854  0.0  0.0 332864   176 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+tsalemy    1857  0.0  0.1 504200  5852 tty2     Sl+  Dec01   0:01 /usr/lib/gnome-settings-daemon/gsd-wacom
+tsalemy    1872  0.0  0.0 278156   208 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+tsalemy    1876  0.0  0.2 931160  8252 tty2     Sl+  Dec01   0:45 /usr/lib/gnome-settings-daemon/gsd-color
+tsalemy    1879  0.0  0.0 345620  1680 tty2     Sl+  Dec01   0:01 /usr/lib/gnome-settings-daemon/gsd-clipboard
+tsalemy    1880  0.0  0.0 364532   444 tty2     Sl+  Dec01   0:05 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+tsalemy    1881  0.0  0.0 469732   152 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+tsalemy    1884  0.0  0.1 1144936 4784 tty2     Sl+  Dec01   0:02 /usr/lib/gnome-settings-daemon/gsd-media-keys
+tsalemy    1886  0.0  0.0 499984  1396 tty2     Sl+  Dec01   0:01 /usr/lib/gnome-settings-daemon/gsd-keyboard
+tsalemy    1887  0.0  0.0 278164   164 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+tsalemy    1917  0.0  0.0 508756   468 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-settings-daemon/gsd-printer
+tsalemy    1931  0.0  0.0 891460   820 ?        Ssl  Dec01   0:01 /usr/lib/evolution/evolution-calendar-factory
+tsalemy    1940  0.2  0.1 525384  6104 tty2     Sl+  Dec01   5:03 /usr/bin/vmtoolsd -n vmusr --blockFd 3
+tsalemy    1943  0.0  1.6 2062960 65872 tty2    Sl+  Dec01   1:03 nautilus-desktop
+tsalemy    1944  0.0  0.0 271932   280 tty2     Sl+  Dec01   0:00 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
+tsalemy    1961  0.0  0.0 368236   900 ?        Sl   Dec01   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+tsalemy    1975  0.0  0.0 204888  2284 tty2     Sl   Dec01   0:05 /usr/lib/ibus/ibus-engine-simple
+tsalemy    1997  0.0  0.0 1143548 1484 ?        Sl   Dec01   0:02 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1931x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1931/2
+tsalemy    2012  0.0  0.0 732676   264 ?        Ssl  Dec01   0:00 /usr/lib/evolution/evolution-addressbook-factory
+tsalemy    2021  0.0  0.0 1017192  604 ?        Sl   Dec01   0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx2012x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/2012/2
+tsalemy    2046  0.0  0.0 204512   384 ?        Ssl  Dec01   0:00 /usr/lib/gvfs/gvfsd-metadata
+tsalemy    2067  0.0  1.0 1331204 40508 ?       SLl  Dec01   0:20 /usr/bin/gnome-software --gapplication-service
+root       2175  0.0  0.1 558912  6208 ?        Ssl  Dec01   0:05 /usr/lib/fwupd/fwupd
+tsalemy    2259  0.0  0.1 596956  6172 tty2     Sl+  Dec01   0:05 update-notifier
+tsalemy    2349  0.0  0.0 787644   860 tty2     Sl+  Dec01   0:00 /usr/lib/deja-dup/deja-dup-monitor
+tsalemy    2357  0.0  0.0  82728   148 ?        Ss   Dec01   0:00 /usr/lib/bluetooth/obexd
+tsalemy    2438  1.4 15.4 2378356 619692 ?      Ssl  Dec01  36:24 /opt/sublime_text/sublime_text ./
+tsalemy    2451  0.0  0.1 128980  7116 ?        Sl   Dec01   0:36 /opt/sublime_text/plugin_host 2438 --auto-shell-env
+root       2921  0.0  0.0      0     0 ?        I    Dec02   0:13 [kworker/3:2]
+tsalemy    4360  0.0  0.1  39176  5112 ?        Ss   Dec02   0:19 tmux
+tsalemy    4361  0.0  0.0  30148  1988 pts/1    Ss+  Dec02   0:01 -bash
+tsalemy    4373  0.0  0.0  30112  2572 pts/2    Ss+  Dec02   0:00 -bash
+root      15948  0.0  0.0      0     0 ?        I    Dec02   0:03 [kworker/2:0]
+root      20049  0.0  0.0      0     0 ?        I    Dec02   0:03 [kworker/0:0]
+tsalemy   21330  0.0  1.7 1346576 71876 tty2    SNl+ Dec02   0:10 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+root      24598  0.0  0.0 109008  2556 ?        Ss   02:48   0:00 /usr/sbin/cupsd -l
+root      24600  0.0  0.0 303668  1440 ?        Ssl  02:48   0:00 /usr/sbin/cups-browsed
+root      28946  0.0  0.0      0     0 ?        I    14:04   0:00 [kworker/2:1]
+root      29341  0.1  0.0      0     0 ?        I    15:20   0:09 [kworker/1:1]
+root      29357  0.0  0.0      0     0 ?        I    15:20   0:03 [kworker/u256:2]
+root      29767  0.0  0.0      0     0 ?        I    16:21   0:02 [kworker/u256:1]
+root      29952  0.1  0.0      0     0 ?        I    16:56   0:02 [kworker/1:0]
+root      30383  0.0  0.0  25660  1236 ?        S    17:12   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-ens33.pid -lf /var/lib/NetworkManager/dhclient-de917fa0-2c49-32a1-a705-35a86ba0ad07-ens33.lease -cf /var/lib/NetworkManager/dhclient-ens33.conf ens33
+root      30399  0.0  0.0      0     0 ?        I    17:13   0:00 [kworker/0:2]
+root      30428  0.3  0.0      0     0 ?        I    17:18   0:03 [kworker/u256:0]
+root      30466  0.0  0.0      0     0 ?        I    17:24   0:00 [kworker/3:1]
+tsalemy   30531  1.6  1.0 1050180 40692 ?       Ssl  17:30   0:03 /usr/lib/gnome-terminal/gnome-terminal-server
+tsalemy   30540  0.0  0.1  30080  5400 pts/0    Ss+  17:30   0:00 bash
+tsalemy   30558  0.0  0.1  29948  5300 pts/3    Ss+  17:30   0:00 bash
+tsalemy   30578  0.0  0.1  30080  5640 pts/4    Ss   17:30   0:00 bash
+tsalemy   30742  0.0  0.0  46772  3644 pts/4    R+   17:33   0:00 ps aux

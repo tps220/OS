@@ -1,0 +1,19 @@
+Should we be able to delete the root sector itself?
+
+When we take in a filename, we need to handle when its longer than 11 characters in the future or shorter than 11 characters
+
+Make sure to free all data that is malloced
+
+Are we allowed to add . and .. as files / directories into the filesystem
+
+Can't delete the root sectors
+
+Make sure to not print out the . and .., for now we have that for debugging purposes
+
+Makes sure to not compare against . and ..
+
+Not sure what to do when we request to overwrite a file and there's too much data
+
+"1D	-2 points: Program must enforce 1 command line arguments and handle invalid file names."
+
+what functionality do we need to provide with . and ..

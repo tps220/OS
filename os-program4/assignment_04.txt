@@ -1,0 +1,177 @@
+CSE303 - Fall 2018
+Assignment #4: Security and Resource Management
+
+Purpose and General Guidelines:
+
+  In this assignment, we will gain familiarity with concepts in security and
+  resource management, while also demonstrating more ability with the tasks
+  we've already discussed this semester.
+
+Getting Started
+
+  If you are reading this file, then you have successfully checked out the
+  starter code for this assignment from Bitbucket.  This code has several
+  files, which contain incomplete functions. You must complete the functions
+  in the files to satisfy the requirements of the assignment.
+
+  By default, the starter code will allow the client to interact with the
+  server via stdin. Messages sent from the client will be reported server
+  side and will be echoed back to the client who will output that message
+  back. You can use this behavior to control directly what the server is sent
+  for testing purposes. You may want to keep a copy of this basic client
+  around.
+
+  In terms of development environment, you should be using a sufficiently
+  recent version of GCC/G++.  On sunlab, you can change your compiler by
+  typing:
+
+    module load gcc-7.1.0
+    
+  (Note: this will only change your compiler for the current logged-in
+  session)
+
+  In terms of teamwork, you may work in teams of up to 3.  However, you must
+  notify Professor Spear as soon as possible if you are planning on working
+  in a team, so that he can set up a shared repository for your team.
+
+Task #0: Tell us who you are
+
+  You should edit the 'team.c' file to provide your name(s) and email
+  address(es). Until you do this, none of your programs will execute.
+
+Task #1: Implement a networked "file server"
+
+  In this task, you are required to modify the Client.cpp and Server.cpp
+  files, so that they provide the basic functionality described in the
+  code. That is, client should be able to send files to the server, where
+  they are stored, and it should also be able to retrieve those files, by
+  name, from the server.
+
+  To get this to work, you will need a protocol for how the two sides
+  interact. For now, the protocol will consist of the following messages:
+
+    To PUT a file:
+      Client sends:
+        PUT <filename>\n
+        <# bytes>\n
+        <file contents>\n
+      Server sends:
+        OK\n
+       or
+        <Some one-line error message>\n
+
+    To GET a file:
+      Client sends:
+        GET <filename>\n
+      Server sends:
+        <Some one-line error message>\n
+       or
+        OK <filename>\n
+        <# bytes>\n
+        <file contents>\n
+
+    Note that each line should end with a newline, except for file contents,
+    which will be a raw byte stream (be wary of strlen).  The server should
+    send an EOF and terminate any connections after sending its reply.
+
+    The format of an error should be: ERROR (#): <Error String>
+    Use the errno value and errno string for these messages where
+    available, if not, come up with your own.
+
+    You may assume that (a) the client will only send files from its local
+    directory, (b) the server will store files in its local directory, (c)
+    the server should send an error if the file is not found, and (d) any
+    command that leads to an overwrite of a file is intentional.  You may
+    also assume that filenames will be sane... no spaces, tabs, or other
+    ugliness.
+
+    Note that you should not run the client and server from the same folder
+    when testing!
+
+Task #2: Add checksums
+
+  In this task, you should add a checksum line immediately before file
+  contents during a transmission.  You should use the md5 algorithm, which
+  can be found in this header:
+  
+    #include <openssl/md5.h>
+
+  To avoid clashing with prior tasks, use "PUTC", "GETC" and "OKC" to specify
+  that a checksum is involved.  As an example, here is the client "PUTC":
+
+        PUTC <filename>\n
+        <# bytes>\n
+        <checksum>\n
+        <file contents>\n
+
+  Note that the server should verify the checksum before sending OKC after a
+  PUTC, and if the checksum does not match, the resulting file should not be
+  saved. After a GETC, the client should compute the checksum, and if it
+  doesn't match, it should not save the file, instead printing an error.
+
+Task #3: Add an LRU cache to the server
+
+  In this task, you should add an LRU caching mechanism to your server. Your
+  cache should store the entire contents of the N most recently used files in
+  memory. On a GET/GETC, you should serve the file without accessing the disk
+  at all. On a PUT/PUTC, you should save the file to disk, and also place it
+  in the cache, so that you can satisfy future GET/GETCs quickly.
+
+  Note that we have built a bug into the above specification. It is
+  intentional. Suppose the client PUT/PUTCs file X. Then suppose that the
+  administrator deletes X from the folder where the server is running. X
+  should remain cached until sufficient GET/GETCs and PUT/PUTCs are issued to
+  cause X to leave the cache.  This bug makes it easier to test that the
+  cache is working correctly.  Please do not fix this bug, as it will make
+  your testing, and our grading, much more tedious.
+
+  The LRU cache should not cause the protocol to change at all, since it runs
+  entirely on the server.
+
+Task #4: Add encryption to the client
+
+  The bug in Task #4 should give you pause: an administrator can access your
+  files at any time! To secure them, extend your Client.cpp so that it
+  encrypts files before PUT/PUTC, and decrypts them after GET/GETC.
+
+  You may assume that the user has a file called "AESKEY" in the working
+  directory.  For help making an AES key, see the 6th tutorial at:
+    http://www.cse.lehigh.edu/~spear/cse303_tutorials/
+
+  This mechanism should not cause the protocol to change at all, since it
+  runs entirely on the client.
+
+  Note that the server is untrusted, and should not know anything about the
+  encryption.
+
+Task #5: Use multithreading
+
+  The final step is to make your server multithreaded.  You can assume that
+  when we test your server, we will not have multiple clients simultaneously
+  calling PUT/PUTC with the same file.  Therefore, you do not need to have
+  threads coordinate to avoid races in the filesystem.  However, threads may
+  concurrently access the LRU cache, so you will need to protect it with a
+  mutex.
+
+  You should maintain a pool of threads (determined by the "-m" parameter),
+  and also a queue.  You may use the unbounded std::queue in C++, which will
+  make this much easier.  Your queue should have a lock and a condition
+  variable associated with it.  Whenever a new connection arrives, the main
+  thread should put the request into the queue, and signal on the condition
+  variable.  Doing so should wake up a thread, who then dequeues the request
+  and handles it.
+
+Turn-In Instructions
+
+  You should use git to push your code any time that you think it is in a
+  gradeable state.  You may turn in your solution as many times as you
+  like. The last turn-in received before grading begins is the only turn-in
+  that will be graded.
+
+  Since this assignment is "quite similar" to the one that was originally
+  assigned, it has an official due date of December 2nd.  However, it will
+  not be collected until December 10th at 11:59 PM EST.  You are strongly
+  encouraged to finish by the original due date, so that you have ample time
+  to study for the final.  But with as crazy as this semester has been, and
+  with senior projects due soon, there's no reason not to provide an
+  extension :)
